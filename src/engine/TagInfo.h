@@ -16,8 +16,8 @@
 #define TAGINFO_H
 
 #include <QString>
-#include "fileref.h"
-#include "tag.h"
+#include <taglib/fileref.h>
+#include <taglib/tag.h>
 
 //#include "tbytevector.h"
 //#include "taglib_export.h"
