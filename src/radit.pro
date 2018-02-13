@@ -133,17 +133,19 @@ RC_FILE = radit.rc
 
 unix {
 
-LIBS += /usr/lib/libbass.so \
-       /usr/lib/libqvumeterplug.so \
-      /usr/lib/libtag.so.1
+QMAKE_LIBDIR +=  ../lib/
+
+LIBS +=  \
+	-lbass \
+      -lqvumeterplug \
+      -ltag \
 
 
 
-INCLUDEPATH = ../lib/bass \
-              ../lib/taglib/include/taglib \
+INCLUDEPATH += ../lib/bass \
               ../lib/vumeter
 
-
+		
 }
 
 #-------------------------------------------------------------
